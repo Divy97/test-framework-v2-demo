@@ -28,8 +28,6 @@ export function seed() {
   const db = open();
   db.exec('delete from orders');
   const insert = db.prepare('insert into orders (id, customer, status, cents) values (?, ?, ?, ?)');
-  // Order 3 is the control fixture: its total is correct, and the issue claiming
-  // otherwise must not reproduce.
   insert.run(1, 'Ada', 'pending', 1250);
   insert.run(2, 'Grace', 'shipped', 4075);
   insert.run(3, 'Alan', 'shipped', 999);

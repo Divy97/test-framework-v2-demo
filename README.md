@@ -1,6 +1,6 @@
 # Orders — a small storefront
 
-A deliberately tiny Node application: an orders list, a JSON API over it, and a
+A small Node application: an orders list, a JSON API over it, and a
 SQLite database. No dependencies — `node:sqlite` and `node:http` are the whole list.
 
 ## Running it

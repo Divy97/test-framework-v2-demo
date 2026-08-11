@@ -1,8 +1,7 @@
-// The demo storefront. One file, no dependencies, two seeded bugs.
+// The storefront's HTTP surface: routing, and nothing else.
 //
-// The bugs are ordinary mistakes rather than puzzles: a typo in a heading and a
-// dropped WHERE clause. That is deliberate — a demo whose bugs are cleverer than
-// real bugs proves nothing about real bugs.
+// The page and the orders query live in their own modules so each can be exercised
+// without booting this.
 
 import { createServer } from 'node:http';
 import { open } from './db.mjs';
