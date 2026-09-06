@@ -6,7 +6,7 @@ export const page = (rows) => `<!doctype html>
 <html lang="en">
 <head><meta charset="utf-8"><title>Orders</title></head>
 <body>
-<h1>Ordres</h1>
+<h1>Orders</h1>
 <table>
 <tr><th>Order</th><th>Customer</th><th>Status</th><th>Total</th></tr>
 ${rows
